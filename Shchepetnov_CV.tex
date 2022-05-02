@@ -9,6 +9,7 @@
 
 \usepackage{mathptmx}
 \usepackage{arev}
+\usepackage{indentfirst}
 % \usepackage[default,osfigures,scale=0.95]{opensans}
 % \usepackage[defaultsans]{droidsans}
 % \usepackage{fontspec}
@@ -42,35 +43,59 @@
 \newcommand{\vacancyName}{PhD student}
 \renewcommand*\familydefault{\sfdefault}
 % \renewcommand{\familydefault}{\sfdefault}
+
+
+\setlength{\parindent}{3em}
+\setlength{\parskip}{0.5em}
+
 \begin{document}
 
 	\pagenumbering{gobble} 
+	
+
 	\raggedright{\Large{\textbf{Arseniy Shchepetnov}}}\\[0.3cm]
-	\raggedright{\textbf{Master of Science in Physics}}\\[0.3cm]
-% 	\raggedright{\huge\vacancyName}\\[0.3cm]
-% 	\noindent Date of birth: $15^{\mathrm{th}}$ December $1989$ \\[0.1cm]
-	\noindent Address: Saint-Petersburg, Russian Federation \\[0.1cm]
-	\noindent Email: \href{mailto:a.shchepetnov@gmail.com}{a.shchepetnov@gmail.com}\\[0.1cm]
-	\noindent Phone: $+7\,953\,149\,42\,68$
 	
-	\section*{Main skills}
-		\begin{itemize}
-			\item Applied areas:
-				\begin{itemize}
-					\item  Digital Signal Processing, Machine Learning, Deep Learning, Bayesian Networks
-				\end{itemize}
-			\item Programming:
-				\begin{itemize}
-					\item Python, C/C++, R, FORTRAN, Latex, PostgreSQL
-					\item pandas, pytorch, bokeh, scrapy and other python packages
-				\end{itemize}
-			\item Physics:
-				\begin{itemize}
-					\item  Atomic Physics, Quantum Mechanics, Quantum Electrodynamics
-				\end{itemize}
-		\end{itemize}
-		Languages: English (Proficiency)\\[0.3cm]
+	\begin{minipage}[t]{0.7\textwidth}
+		\vspace{0pt}
+		\raggedright{\textbf{Master of Science in Physics}}\\[0.3cm]
+		% 	\raggedright{\huge\vacancyName}\\[0.3cm]
+		% 	\noindent Date of birth: $15^{\mathrm{th}}$ December $1989$ \\[0.1cm]
+		\noindent Address: Saint-Petersburg, Russian Federation \\[0.1cm]
+		\noindent Email: \href{mailto:a.shchepetnov@gmail.com}{a.shchepetnov@gmail.com}\\[0.1cm]
+		\noindent Phone: $+7\,953\,149\,42\,68$ \\
+		\noindent GitHub: \href{https://github.com/ArseniyShchepetnov}{https://github.com/ArseniyShchepetnov}
+	\end{minipage}
+	\begin{minipage}[t]{0.2\textwidth}
+		\vspace{0pt}
+		\includegraphics[width=\linewidth]{photo.png}
+	\end{minipage}
 	
+	
+	\section*{Objective}
+	
+	Data Science, Development
+	
+	\section*{Relevant skills}
+	
+	\setlength{\parindent}{3em}
+
+	
+	My interest vector is referred mostly to Data Science, Research and Development, Product Development related to technologies.
+	As for development skills I was using Python for more then 5 years.
+	I have a good development performance with Python writing maintainable and structured code.
+	
+	
+	Academic research experience (quantum physics) is very helpful, however working for business is better for me.
+	For a long time I have been working in agile format and participated in product development as consultant.
+	Experience in leading small team was obtained.
+
+	
+	I have experience in Digital Signal Processing, Machine Learning, Deep Learning successfully implementing, serving and deploying algorithmic solutions for business value.
+	
+	
+	
+	
+	\setlength{\parindent}{0em}
 	\vspace{\verticalSpace}
 %-------------------------------------------------------------------------------------------------------------------------------	
 	\vspace{\verticalSpace}
@@ -82,18 +107,28 @@
 	\end{minipage}
 	\hspace{\horizontalSpace}
 	\begin{minipage}[t]{\rmpratio\textwidth}
-		\sectionMain{Lead Data Scientist/Team Lead}\\
-		\href{https://www.pwc.ru/}{<<PWC>>} (Technology), Saint-Petersburg\\[0.5cm]		
-		Machine Learning, Deep Learning, Digital Signal Processing, Bayesian Networks, Oil and Gaz\\
+		\sectionMain{Lead Data Scientist/Team Lead/Senior Consultant}\\
+		\href{https://www.pwc.ru/}{<<PWC>>} (Technology, Artificial Intelligence), Saint-Petersburg\\[0.3cm]		
 		
-		Development for oil\&gas client in the technology consulting department.
+		Research and Development in ``AI Practice'' in the Technology Consulting unit.\\
+		Leading team with 3 Junior Data Scientists.\\
+		
+		Multiple projects were carried out simultaneously.
+		
 		\begin{itemize}
-			\item Cognitive geology with bayesian networks.
-			\item Research and development of methodology and algorithms for automatic well logs analysis in order to recover productive layers.
-			\item Research and development of autocorrelation methods for well logs.
-			\item Python development and MLOps features.
-			\item Team development and client communication.
+			\item Numerical service development (FastAPI) with Template-based Bayesian Network as a part of the cognitive product. 
+			During the project hypothesis construction and testing, bayesian network module optimization were performed. 
+			MVP was launched successfully and further product development in the part of the numerical module.
+			\item Machine Learning and Deep Learning well logs data analysis in order to predict productive saturation as a resumption of the project started at IBM.
+			Development of well logs correlation methods.
+			\item ``Proof of principle'' in the field of well logs recovery with machine and deep learning techniques.
+			\item Participation in neighboring projects to support hiring or technology consulting.
+			
 		\end{itemize}
+		
+		Also, I designed Objective DataFrame framework for pandas DataFrame's serving.
+		
+		
 		
 	\end{minipage}	
 	\vspace{\vSpace}
@@ -104,17 +139,14 @@
 	\end{minipage}
 	\hspace{\horizontalSpace}
 	\begin{minipage}[t]{\rmpratio\textwidth}
-		\sectionMain{Data Scientist/Lead Data Scientist}\\
+		\sectionMain{Data Scientist/Lead Data Scientist/Team Lead}\\
 		\href{https://www.ibm.com/ru/rstl/index-en.html}{<<IBM STC>>} (GBS), Saint-Petersburg, Moscow\\[0.5cm]		
-		Machine Learning, Deep Learning, Digital Signal Processing, Oil and Gaz\\
+		Work with ``Cognitive Practice Team'' in the consulting Global Business Service unit in IBM.
 		
-		Development for oil\&gas client in the technology consulting department. 
-		\begin{itemize}
-			\item Research and development of methodology and algorithms for automatic well logs analysis in order to recover productive layers.
-			\item Research and development of autocorrelation methods for well logs.
-			\item Python development and MLOps features.
-			\item Team development and client communication.
-		\end{itemize}
+		From year 2020 started leading 2 Junior Data Scientist.
+		
+		The main project was dedicated to saturation prediction, well logs correlation and product development with the features with deep learning and machine learning numerical modules.
+		Project resulted in the MVP and some productive intervals (oil) predicted by the system were successfully perforated.	  
 		
 	\end{minipage}	
 	\vspace{\vSpace}
@@ -127,9 +159,10 @@
 	\begin{minipage}[t]{\rmpratio\textwidth}
 		\sectionMain{Research engineer}\\
 		\href{https://healbe.com/}{<<Healbe corp.>>}, Saint-Petersburg\\[0.5cm]		
-		Digital Signal Processing, Wearable Technologies\\
 		
-		Research and development of the algorithms for wristband non-stationary heart rate signals monitoring with piezo- and optical sensors. 
+		 Development of algorithms for wearable devices signals processing. 
+		 Successfully developed algorithms for custom sensor and for optical heart rate sensor.
+		 
 		
 	\end{minipage}	
 	\vspace{\vSpace}
@@ -169,9 +202,8 @@
 	\begin{minipage}[t]{\rmpratio\textwidth}
 		\sectionMain{Engineer-programmer}\\
 		\href{http://www.rimr.ru/eng/}{<<Russian Institute for Power Radiobuilding>>}, Saint-Petersburg\\[0.5cm]
-		Software development for HF radio equipment on Linux. 
-		Business trips, tuning of equipment and documentation.\\[0.5cm]
-		Results: GUI (C/C++, Qt), Database (PostgreSQL)
+		Linux based software development for HF radio equipment: C/C++, Qt4, PostgreSQL.
+		Designed and developed database, GUI and successfully deployed.
 	\end{minipage}
 
 		\vspace{\vSpace}
@@ -255,7 +287,7 @@
 	
 	\vspace{5cm}
 	
-	\today \hspace{8cm} Arseniy Shchepetnov
+	Arseniy Shchepetnov
 	
 	
 	
