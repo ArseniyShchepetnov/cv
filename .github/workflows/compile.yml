@@ -7,8 +7,10 @@ on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
     branches: [ "master" ]
+    paths: '**.tex'
   pull_request:
     branches: [ "master" ]
+    paths: '**.tex'
 
 jobs:
   build_latex:
@@ -20,8 +22,28 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: Shchepetnov_CV.tex
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v4
-        with:
-          name: PDF
-          path: Shchepetnov_CV.pdf
+          
+      - name: Commit and Push Changes
+        if: steps.check-csv.outcome == 'success'
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          timestamp=$(date +'%Y%m%d%H%M%S')
+          branch_name="update-pdf-$timestamp"
+      
+          git checkout -b "$branch_name"
+      
+          git add Shchepetnov_CV.pdf
+      
+          git commit -m "Update PDF"
+      
+          git push origin "$branch_name"
+      
+          git checkout main
+          git merge --no-ff "$branch_name"
+          git push origin main
+      
+          # delete the temporary branch
+          git branch -d "$branch_name"
+          git push origin --delete "$branch_name"
