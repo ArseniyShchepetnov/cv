@@ -19,12 +19,13 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
       - name: Compile LaTeX document
+        id: compile
         uses: xu-cheng/latex-action@v2
         with:
           root_file: Shchepetnov_CV.tex
           
       - name: Commit and Push Changes
-        if: steps.check-csv.outcome == 'success'
+        if: steps.compile.outcome == 'success'
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
